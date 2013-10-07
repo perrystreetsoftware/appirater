@@ -205,13 +205,13 @@ static BOOL _alwaysUseMainBundle = NO;
 }
 
 - (void)showRatingAlert {
-	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:APPIRATER_MESSAGE_TITLE
-														 message:APPIRATER_MESSAGE
-														delegate:self
-											   cancelButtonTitle:APPIRATER_CANCEL_BUTTON
-											   otherButtonTitles:APPIRATER_RATE_BUTTON, APPIRATER_RATE_LATER, nil];
-	self.ratingAlert = alertView;
-    [alertView show];
+//	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:APPIRATER_MESSAGE_TITLE
+//														 message:APPIRATER_MESSAGE
+//														delegate:self
+//											   cancelButtonTitle:APPIRATER_CANCEL_BUTTON
+//											   otherButtonTitles:APPIRATER_RATE_BUTTON, APPIRATER_RATE_LATER, nil];
+//	self.ratingAlert = alertView;
+//    [alertView show];
 
     id <AppiraterDelegate> delegate = _delegate;
     if (delegate && [delegate respondsToSelector:@selector(appiraterDidDisplayAlert:)]) {
