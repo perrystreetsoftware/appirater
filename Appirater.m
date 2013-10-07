@@ -287,19 +287,19 @@ static BOOL _alwaysUseMainBundle = NO;
       return;
   }
   
-  if (displayRateLaterButton) {
-  	alertView = [[UIAlertView alloc] initWithTitle:self.alertTitle
-                                           message:self.alertMessage
-                                          delegate:self
-                                 cancelButtonTitle:self.alertCancelTitle
-                                 otherButtonTitles:self.alertRateTitle, self.alertRateLaterTitle, nil];
-  } else {
-  	alertView = [[UIAlertView alloc] initWithTitle:self.alertTitle
-                                           message:self.alertMessage
-                                          delegate:self
-                                 cancelButtonTitle:self.alertCancelTitle
-                                 otherButtonTitles:self.alertRateTitle, nil];
-  }
+//  if (displayRateLaterButton) {
+//  	alertView = [[UIAlertView alloc] initWithTitle:self.alertTitle
+//                                           message:self.alertMessage
+//                                          delegate:self
+//                                 cancelButtonTitle:self.alertCancelTitle
+//                                 otherButtonTitles:self.alertRateTitle, self.alertRateLaterTitle, nil];
+//  } else {
+//  	alertView = [[UIAlertView alloc] initWithTitle:self.alertTitle
+//                                           message:self.alertMessage
+//                                          delegate:self
+//                                 cancelButtonTitle:self.alertCancelTitle
+//                                 otherButtonTitles:self.alertRateTitle, nil];
+//  }
 
 	self.ratingAlert = alertView;
     [alertView show];
