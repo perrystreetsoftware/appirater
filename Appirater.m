@@ -672,6 +672,22 @@ static BOOL _alwaysUseMainBundle = NO;
 	}
 }
 
++ (void) rateLater
+{
+ 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setDouble:[[NSDate date] timeIntervalSince1970] forKey:kAppiraterReminderRequestDate];
+    [userDefaults synchronize];
+}
+
++ (void) declineRating
+{
+ 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool:YES forKey:kAppiraterDeclinedToRate];
+	[userDefaults synchronize];
+    
+    
+}
+
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
 	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     

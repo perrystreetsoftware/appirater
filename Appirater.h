@@ -182,6 +182,10 @@ extern NSString *const kAppiraterReminderRequestDate;
  */
 + (void)rateApp;
 
+// es added - decline rating
++ (void) declineRating;
++ (void) rateLater;
+
 /*!
  Tells Appirater to immediately close any open rating modals (e.g. StoreKit rating VCs).
 */
